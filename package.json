@@ -2,9 +2,13 @@
   "name": "vue-devops",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/woosteelz/vue-devops",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "clean": "gh-pages clean",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
@@ -23,6 +27,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.2.1",
     "vue-template-compiler": "^2.6.11"
   }
